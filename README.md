@@ -4,7 +4,7 @@
 [![SwiftUI](https://developer.apple.com/assets/elements/icons/swiftui/swiftui-128x128_2x.png)](https://developer.apple.com/tutorials/swiftui)
 
 
-SwiftWidgets is an easy to use swift package that serves a variety of flutter like widgets to make coding easier
+SwiftWidgets is an easy to use swift package that serves a variety of flutter like widgets for SwiftUI to make coding easier
 
 - Documentation with example codes
 - Custom views
