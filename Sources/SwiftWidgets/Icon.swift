@@ -7,15 +7,16 @@
 
 import SwiftUI
 
+
+
 /// A graphical icon view drawn with a [systemName] using the SF Symbols.
-///
 ///
 /// This example shows how to create a [HStack] of [Icon]s in different colors and
 /// sizes. The first [Icon] uses a [semanticLabel] to announce in accessibility.
 ///
-/// ![A horizontal stack of icons representing a red apple logo, a green airplane, and a blue car](https://raw.githubusercontent.com/omeasraf/SFIcons/main/Images/iconsExample.png)
+/// ![A horizontal stack of icons representing a red apple logo, a green airplane, and a blue car](https://raw.githubusercontent.com/omeasraf/SwiftWidgets/main/Images/iconsExample.png)
 ///
-/// ```dart
+/// ```swift
 /// VStack{
 ///    Icon(SFIcons.applelogo,
 ///         size: 25,
@@ -29,6 +30,10 @@ import SwiftUI
 ///         color: Color.blue)
 /// }
 /// ```
+///
+///  - Author: Ome Asraf
+///  - Version: 1.0.0
+///  - <https://raw.githubusercontent.com/omeasraf/SwiftWidgets/main/Images/iconsExample.png>
 ///
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
 public struct Icon: View {
