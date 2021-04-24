@@ -37,7 +37,7 @@ public struct Icon: View {
     var color: Color
     var semanticLabel: String
     
-    init(_ icon: String, size: CGFloat = 12, color: Color = Color.white, semanticLabel: String = "icon") {
+    public init(_ icon: String, size: CGFloat = 12, color: Color = Color.white, semanticLabel: String = "icon") {
         self.icon = icon
         self.size = size
         self.color = color
