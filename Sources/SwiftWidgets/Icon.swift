@@ -31,7 +31,7 @@ import SwiftUI
 /// ```
 ///
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
-struct Icon: View {
+public struct Icon: View {
     var icon: String
     var size: CGFloat
     var color: Color
@@ -44,7 +44,7 @@ struct Icon: View {
         self.semanticLabel = semanticLabel
     }
 
-    var body: some View {
+    public var body: some View {
         Image(systemName: icon)
             .font(.system(size: size))
             .foregroundColor(color)
