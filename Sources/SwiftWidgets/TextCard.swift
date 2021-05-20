@@ -54,22 +54,25 @@ public struct TextCard: View {
         
     }
     public var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(backgroundColor)
-                .shadow(color: shadowColor, radius: shadowRadius,x: shadowOffsetX, y: shadowOffsetY)
-            VStack {
-                title
-                    .font(.title)
+        
+        Card(child:
+                AnyView(VStack {
+                    title
+                        .font(.title)
                 if description != Text("") {
                     description
                         .font(.body)
                 }
-                
-            }
-            .padding(20)
-            .multilineTextAlignment(.center)
-        }.padding()
+            
+        }
+        .padding(20)
+        .multilineTextAlignment(.center)),
+             borderRadius: cornerRadius,
+             backgroundColor: backgroundColor,
+             shadowColor: shadowColor,
+             shadowRadius: shadowRadius,
+             offsetX: shadowOffsetX,
+             offsetY: shadowOffsetY)
         
         
         
