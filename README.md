@@ -29,6 +29,52 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 | Card | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/card.png?raw=true) |
 | TextCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/TextCard.png?raw=true) |
 
+
+
+## Sample Code
+
+Card
+```swift
+ Card(child: AnyView(Text("Hello World").foregroundColor(.white).padding(20)),
+     borderRadius: 10,
+     backgroundColor: Color.red,
+     shadowColor: Color.red.opacity(0.5),
+     shadowRadius: 5,offsetY: 10)
+```
+
+Icon
+
+ ```swift
+ VStack{
+    Icon(SFIcons.applelogo,
+         size: 25,
+         color: Color.red,
+         semanticLabel: "Apple Logo")
+    Icon(SFIcons.airplane,
+         size: 35,
+         color: Color.green)
+    Icon(SFIcons.carFill,
+         size: 45,
+         color: Color.blue)
+ }
+ ```
+TextCard
+
+ ```swift
+ TextCard(title: Text("Welcome to Widgets")
+            .foregroundColor(.white),
+     description: Text("Widgets are super fun")
+            .foregroundColor(Color.white.opacity(0.5)),
+     borderRadius: 10,
+     backgroundColor: Color.red,
+     shadowColor: Color.red.opacity(0.5),
+     shadowRadius: 5,offsetY: 10
+ )
+ ```
+
+
+
+
 ## Installation
 
 Only with Swift Package Manager, via Xcode or directly:
