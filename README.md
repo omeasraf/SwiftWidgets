@@ -40,7 +40,7 @@ Only with Swift Package Manager, via Xcode or directly:
 
 ## Contributions
 
-Welcome: open an issue / @omeasraf
+Welcome: open an issue / [@omeasraf](https://twitter.com/omeasraf)
 
 ## License
 Distributed under the MIT license.
