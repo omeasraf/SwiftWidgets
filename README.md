@@ -16,7 +16,8 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 | View | Description |
 | ------ | ------ |
 | Icon | A graphical icon view drawn with a systemName using the SF Symbols |
-| TextCard | A panel of texts with slightly rounded corners and an elevation shadow |
+| Card | A rectangular shape with slightly rounded corners and an elevation shadow |
+| TextCard | Custom texts inside of a Card |
 
 
 ## Examples
@@ -25,6 +26,7 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 | View | Image |
 | ------ | ------ |
 | Icon | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/iconsExample.png?raw=true) |
+| Cardd | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/card.png?raw=true) |
 | TextCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/TextCard.png?raw=true) |
 
 ## Installation
