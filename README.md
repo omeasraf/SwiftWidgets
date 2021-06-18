@@ -80,7 +80,8 @@ TextCard
           .foregroundColor(.white),
       description: Text("Singer, Songwriter")
           .foregroundColor(.white),
-      imageURL: "https://pbs.twimg.com/media/EygPE2jW8AMtsex.jpg", backgroundColor: Color.gray.opacity(0.6),
+      imageURL: "https://pbs.twimg.com/media/EygPE2jW8AMtsex.jpg",
+      backgroundColor: Color.gray.opacity(0.6),
       shadowColor: Color.yellow.opacity(0.5),
       offsetX: 5.0
   )
