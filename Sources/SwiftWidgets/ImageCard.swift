@@ -92,6 +92,7 @@ public struct ImageCard: View {
                         
                         
                     })
+                    .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
                     .cornerRadius(10.0, corners: [.topLeft, .topRight])
                 }
                 else{
@@ -109,6 +110,7 @@ public struct ImageCard: View {
                          backgroundColor: Color.white.opacity(0),
                          shadowColor: Color.white.opacity(0)
                 )
+                .frame(maxHeight: 70)
                 
                 
             }
