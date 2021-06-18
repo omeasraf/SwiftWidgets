@@ -30,7 +30,7 @@ import SwiftUI
 ///  - Version: 1.0.0
 ///  - Image: <https://raw.githubusercontent.com/omeasraf/SwiftWidgets/main/Images/TextCard.png>
 ///
-@available(iOS 14.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
 struct ImageCard: View {
     
     var title:Text
@@ -80,7 +80,8 @@ struct ImageCard: View {
         
         Card(child: AnyView(
             VStack{
-                if imageURL != ""{
+                if imageURL != "", #available(iOS 14.0, *) {
+          
                     AsyncImage(url: URL(string:imageURL)!,  placeholder: {
                         placeholder
                         
