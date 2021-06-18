@@ -100,12 +100,13 @@ Only with Swift Package Manager, via Xcode or directly:
          url: "https://github.com/omeasraf/SwiftWidgets.git",
          from: "1.0.0")
 ```
-```diff
+```dsconfig
+Install using Xcode
 - Open "Xcode"
 - Click on "File"
 - Click on "Swift Packages"
 - Click on "Add Package Dependency"
-- Paste this url ["https://github.com/omeasraf/SwiftWidgets"](https://github.com/omeasraf/SwiftWidgets)
+- Paste this url "https://github.com/omeasraf/SwiftWidgets"
 - Follow the onscreen prompts
 ```
 
