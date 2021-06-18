@@ -28,6 +28,7 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 | Icon | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/iconsExample.png?raw=true) |
 | Card | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/card.png?raw=true) |
 | TextCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/TextCard.png?raw=true) |
+| ImageCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/ImageCard.png?raw=true) |
 
 
 
@@ -71,6 +72,20 @@ TextCard
      shadowRadius: 5,offsetY: 10
  )
  ```
+ ImageCard
+
+  ```swift
+  ImageCard(
+      title: Text("Taylor Swift")
+          .foregroundColor(.white),
+      description: Text("Singer, Songwriter")
+          .foregroundColor(.white),
+      imageURL: "https://pbs.twimg.com/media/EygPE2jW8AMtsex.jpg", backgroundColor: Color.gray.opacity(0.6),
+      shadowColor: Color.yellow.opacity(0.5),
+      offsetX: 5.0
+  )
+  .frame(height: 400)
+  ```
 
 
 
@@ -84,6 +99,19 @@ Only with Swift Package Manager, via Xcode or directly:
 .package(name: "SwiftWidgets",
          url: "https://github.com/omeasraf/SwiftWidgets.git",
          from: "1.0.0")
+```
+```diff
+- Open "Xcode"
+- Click on "File"
+- Click on "Swift Packages"
+- Click on "Add Package Dependency"
+- Paste this url ["https://github.com/omeasraf/SwiftWidgets"](https://github.com/omeasraf/SwiftWidgets)
+- Follow the onscreen prompts
+```
+
+##### Import
+```swift
+import SwiftWidgets
 ```
 
 ## Contributions
