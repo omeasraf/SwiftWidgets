@@ -9,7 +9,7 @@
 import Combine
 import UIKit
 
-@available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
 class ImageLoader: ObservableObject {
     @Published var image: UIImage?
     
