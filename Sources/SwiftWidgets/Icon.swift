@@ -42,7 +42,7 @@ public struct Icon: View {
     var color: Color
     var semanticLabel: String
     
-    public init(_ icon: String, size: CGFloat = 12, color: Color = Color.white, semanticLabel: String = "icon") {
+    public init(_ icon: String, size: CGFloat = -1, color: Color = Color.white, semanticLabel: String = "icon") {
         self.icon = icon
         self.size = size
         self.color = color
@@ -50,10 +50,18 @@ public struct Icon: View {
     }
 
     public var body: some View {
-        Image(systemName: icon)
-            .font(.system(size: size))
-            .foregroundColor(color)
-            .accessibility(label: Text(semanticLabel))
-            
+        if size != -1 {
+            Image(systemName: icon)
+                .font(.system(size: size))
+                .foregroundColor(color)
+                .accessibility(label: Text(semanticLabel))
+        }
+        else{
+            Image(systemName: icon)
+                .resizable()
+                .foregroundColor(color)
+                .accessibility(label: Text(semanticLabel))
+        }
+                
     }
 }
