@@ -19,6 +19,7 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 | Card | A rectangular shape with slightly rounded corners and an elevation shadow |
 | TextCard | Custom texts inside of a Card |
 | ImageCard | An image inside a card with bottom text |
+| ImageCarousel | Scrollable poster view |
 
 
 ## Examples
@@ -26,10 +27,11 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 
 | View | Image |
 | ------ | ------ |
-| Icon | <img src="Images/iconsExample.png" style="max-height: 200px"> |
-| Card | <img src="Images/card.png" style="max-height: 200px"> |
-| TextCard | <img src="Images/TextCard.png" style="max-height: 200px"> |
-| ImageCard | <img src="Images/ImageCard.png" style="width: 220px; height: 200px"> |
+| Icon | <img src="Images/iconsExample.png" height="200"> |
+| Card | <img src="Images/card.png" height="200"> |
+| TextCard | <img src="Images/TextCard.png" height="200"> |
+| ImageCard | <img src="Images/ImageCard.png" height="200" width="220"> |
+| ImageCarousel | <img src="Images/ImageCarousel.png" height="200"> |
 
 
 
@@ -87,6 +89,13 @@ TextCard
       offsetX: 5.0
   )
   .frame(height: 400)
+  ```
+ ImageCarousel
+
+  ```swift
+ImageCarousel(images: CarouselModel.example, width: 130){ image in
+    AnyView(Text(image.name)) // destination view
+}
   ```
 
 
