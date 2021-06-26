@@ -105,8 +105,6 @@ public struct ImageCarousel: View {
                             })
                         
                             .scaleEffect(.init(width: scale, height: scale))
-                            .animation(.easeOut(duration: 1))
-                            
                             .padding(.vertical)
                     }
                     .frame(width: width, height: height)
@@ -117,5 +115,17 @@ public struct ImageCarousel: View {
                     .frame(width: 16)
             }
         }
+    }
+}
+
+
+
+
+struct ImageCarousel_Previews: PreviewProvider {
+    static var previews: some View {
+        ImageCarousel(images: CarouselModel.example){ image in
+            AnyView(Text(image.name))
+        }
+           
     }
 }
