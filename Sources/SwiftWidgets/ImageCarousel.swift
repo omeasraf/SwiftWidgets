@@ -32,15 +32,13 @@ public struct ImageCarousel: View {
     var width: CGFloat
     var cornerRadius: CGFloat
     var color: Color
-    var bottom: HStack
     var destination: (CarouselModel) -> AnyView
     
-    public init(images: [CarouselModel], width: CGFloat = 125, cornerRadius: CGFloat = 5, color: Color = .black, bottom: HStack = HStack{}, destination: (CarouselModel) -> AnyView){
+    public init(images: [CarouselModel], width: CGFloat = 125, cornerRadius: CGFloat = 5, color: Color = .black, destination: @escaping (CarouselModel) -> AnyView){
         self.images = images
         self.width = 125
         self.cornerRadius = cornerRadius
         self.color = color
-        self.bottom = bottom
         self.destination = destination
     }
     
@@ -100,7 +98,7 @@ public struct ImageCarousel: View {
                                         .font(.system(size: 16, weight: .semibold))
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(color)
-                                    bottom
+                          
                                 }
                             })
                         
