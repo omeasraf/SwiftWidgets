@@ -6,13 +6,18 @@
 //
 
 import Foundation
-import SwiftUI
 
 
 struct CarouselModel: Hashable {
     var url: URL
     var name: String
-    var isLocal: Bool = false
+    var isLocal: Bool
+    
+    public init(url: URL, name: String, isLocal: Bool = false) {
+        self.url = url
+        self.name = name
+        self.isLocal = isLocal
+    }
 
 }
 
