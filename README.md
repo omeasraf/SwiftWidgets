@@ -26,10 +26,10 @@ SwiftWidgets is an easy to use swift package that serves a variety of flutter li
 
 | View | Image |
 | ------ | ------ |
-| Icon | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/iconsExample.png?raw=true) |
-| Card | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/card.png?raw=true) |
-| TextCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/TextCard.png?raw=true) |
-| ImageCard | ![Icon](https://github.com/omeasraf/SwiftWidgets/blob/main/Images/ImageCard.png?raw=true) |
+| Icon | <img src="Images/iconsExample.png" style="max-height: 200px;"> |
+| Card | <img src="Images/card.png" style="max-height: 200px;"> |
+| TextCard | <img src="Images/TextCard.png" style="max-height: 200px;"> |
+| ImageCard | <img src="Images/ImageCard.png" style="width: 220px; max-height: 200px"> |
 
 
 
