@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct CarouselModel: Hashable {
+public struct CarouselModel: Hashable {
     var url: URL
     var name: String
     var isLocal: Bool
