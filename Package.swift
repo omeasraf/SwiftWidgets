@@ -5,17 +5,21 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftWidgets",
+    platforms: [.iOS(.v13), .macOS(.v11), .watchOS(.v6)],
     products: [
         .library(
             name: "SwiftWidgets",
             targets: ["SwiftWidgets"]),
     ],
-    dependencies: [
-    ],
+    dependencies: [.package(url: "https://github.com/onevcat/Kingfisher.git", from: "6.3.0")],
     targets: [
         .target(
-              name: "SwiftWidgets",
-              path: "Sources"
-            )
+            name: "SwiftWidgets",
+            dependencies: [
+                "Kingfisher"
+            ],
+            path: "Sources"
+        ),
+        
     ]
 )

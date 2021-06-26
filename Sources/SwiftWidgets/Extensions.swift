@@ -7,6 +7,22 @@
 
 import SwiftUI
 
+
+@available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
+extension View {
+    @ViewBuilder
+    func `if`<Transform:View>(
+        _ condition: Bool, transform: (Self) -> Transform) -> some View {
+        if condition {
+            transform(self)
+        }
+        else{
+            self
+        }
+    }
+}
+
+
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {

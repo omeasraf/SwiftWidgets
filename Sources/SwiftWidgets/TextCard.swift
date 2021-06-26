@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-/// A card: A panel of texts with slightly rounded corners and an
+/// Textcard: A panel of texts with slightly rounded corners and an
 /// elevation shadow.
 ///
 /// This example shows how to create a [TextCard] with different colors and

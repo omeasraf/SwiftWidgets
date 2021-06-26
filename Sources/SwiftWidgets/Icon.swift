@@ -32,7 +32,7 @@ import SwiftUI
 /// ```
 ///
 ///  - Author: Ome Asraf
-///  - Version: 1.0.0
+///  - Version: 1.0.1
 ///  - Image: <https://raw.githubusercontent.com/omeasraf/SwiftWidgets/main/Images/iconsExample.png>
 ///
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
@@ -50,18 +50,15 @@ public struct Icon: View {
     }
 
     public var body: some View {
-        if size != -1 {
             Image(systemName: icon)
+                .if(size == -1, transform: {
+                    $0.resizable()
+                })
+                .if(size != -1, transform: {
+                    $0.font(.system(size: size))
+                })
                 .font(.system(size: size))
                 .foregroundColor(color)
                 .accessibility(label: Text(semanticLabel))
-        }
-        else{
-            Image(systemName: icon)
-                .resizable()
-                .foregroundColor(color)
-                .accessibility(label: Text(semanticLabel))
-        }
-                
     }
 }
