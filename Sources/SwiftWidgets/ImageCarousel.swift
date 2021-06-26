@@ -29,11 +29,20 @@ import Kingfisher
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, *)
 public struct ImageCarousel: View {
     var images: [CarouselModel]
-    var width: CGFloat = 125
-    var cornerRadius: CGFloat = 5
-    var color: Color = .black
-    var bottom: HStack = HStack{}
+    var width: CGFloat
+    var cornerRadius: CGFloat
+    var color: Color
+    var bottom: HStack
     var destination: (CarouselModel) -> AnyView
+    
+    public init(images: [CarouselModel], width: CGFloat = 125, cornerRadius: CGFloat = 5, color: Color = .black, bottom: HStack = HStack{}, destination: (CarouselModel) -> AnyView){
+        self.images = images
+        self.width = 125
+        self.cornerRadius = cornerRadius
+        self.color = color
+        self.bottom = bottom
+        self.destination = destination
+    }
     
     func getScale(proxy: GeometryProxy) -> CGFloat {
 
