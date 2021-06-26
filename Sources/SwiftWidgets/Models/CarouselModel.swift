@@ -9,9 +9,9 @@ import Foundation
 
 
 public struct CarouselModel: Hashable {
-    var url: URL
-    var name: String
-    var isLocal: Bool
+    public var url: URL
+    public var name: String
+    public var isLocal: Bool
     
     public init(url: URL, name: String, isLocal: Bool = false) {
         self.url = url
@@ -22,7 +22,7 @@ public struct CarouselModel: Hashable {
 }
 
 extension CarouselModel {
-    static let example = [
+    public static let example = [
         CarouselModel(url: URL(string: "https://www.themoviedb.org/t/p/w1280/7rhzEufovmmUqVjcbzMHTBQ2SCG.jpg")!, name: "Luca (2021)"),
         CarouselModel(url: URL(string: "https://www.themoviedb.org/t/p/w1280/z8CExJekGrEThbpMXAmCFvvgoJR.jpg")!, name: "Army of the Dead (2021)"),
         CarouselModel(url: URL(string: "https://www.themoviedb.org/t/p/w1280/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg")!, name: "Raya and the Last Dragon (2021)"),
