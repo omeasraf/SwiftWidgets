@@ -30,13 +30,15 @@ import Kingfisher
 public struct ImageCarousel: View {
     var images: [CarouselModel]
     var width: CGFloat
+    var height: CGFloat
     var cornerRadius: CGFloat
     var color: Color
     var destination: (CarouselModel) -> AnyView
     
-    public init(images: [CarouselModel], width: CGFloat = 125, cornerRadius: CGFloat = 5, color: Color = .black, destination: @escaping (CarouselModel) -> AnyView){
+    public init(images: [CarouselModel], width: CGFloat = 125, height: CGFloat = 400, cornerRadius: CGFloat = 5, color: Color = .black, destination: @escaping (CarouselModel) -> AnyView){
         self.images = images
         self.width = 125
+        self.height = height
         self.cornerRadius = cornerRadius
         self.color = color
         self.destination = destination
@@ -75,10 +77,6 @@ public struct ImageCarousel: View {
                                         .frame(width: width + 55)
                                         .clipped()
                                         .cornerRadius(8)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .stroke(Color(white: 0.4))
-                                        )
                                         .shadow(radius: 3)
                                     }
                                     else{
@@ -88,10 +86,6 @@ public struct ImageCarousel: View {
                                             .frame(width: width + 55)
                                             .clipped()
                                             .cornerRadius(8)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 8)
-                                                    .stroke(Color(white: 0.4))
-                                            )
                                             .shadow(radius: 3)
                                     }
                                     Text(image.name)
@@ -107,7 +101,7 @@ public struct ImageCarousel: View {
                             
                             .padding(.vertical)
                     }
-                    .frame(width: width, height: 400)
+                    .frame(width: width, height: height)
                     .padding(.horizontal, 32)
                     .padding(.vertical, 32)
                 }
